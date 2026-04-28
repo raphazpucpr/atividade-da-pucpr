@@ -17,8 +17,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Compile
-        run: javac src/*.java src/test/*.java
+      - name: Compile all
+        run: javac src/Calculadora.java src/Main.java src/test/CalculadoraTest.java
 
       - name: Run tests
-        run: java -ea -cp src/test CalculadoraTest
+        run: java -ea -cp src/test:. CalculadoraTest
