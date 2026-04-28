@@ -21,4 +21,4 @@ jobs:
         run: javac src/Calculadora.java src/Main.java src/test/CalculadoraTest.java
 
       - name: Run tests
-        run: java -ea -cp src/test:. CalculadoraTest
+        run: java -ea -cp src:. src.test.CalculadoraTest
