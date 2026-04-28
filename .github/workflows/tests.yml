@@ -17,5 +17,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Compile tests
+        run: javac src/test/CalculadoraTest.java
+
       - name: Run tests
-        run: javac -cp . src/test/java/*.java && java org.junit.runner.JUnitCore CalculadoraTest
+        run: java -cp src/test org.junit.runner.JUnitCore CalculadoraTest
