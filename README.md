@@ -2,3 +2,5 @@
 atividade-da-pucpr
 
 ALTEREI O README
+
+CRIEI TESTES UNITÁRIOS
